@@ -31,7 +31,6 @@ ALLOWED_HOSTS = ['.herokuapp.com','127.0.0.1','localhost']
 # Application definition
 
 INSTALLED_APPS = [
-    'accounts',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bootstrap4',
+    'accounts',
+    'pages',
     
 ]
 
