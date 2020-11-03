@@ -135,6 +135,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # <- for smtp
 DEFAULT_FROM_EMAIL = 'colin@colincron.com'
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'apikey'
-EMAIL_HOST_PASSWORD = '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'
+
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True

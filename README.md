@@ -1,7 +1,7 @@
 # django_news
 
 superuser username = 'colin'
-superuser pw = '12345'
+superuser pw = '!@#$%12345'
 
 
 demo:
