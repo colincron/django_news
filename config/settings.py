@@ -37,7 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'bootstrap4',
+    
+    # 3rd party
+    'crispy_forms',
+    
+    #local
     'accounts',
     'pages',
     
@@ -125,3 +129,12 @@ STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'accounts.CustomUser'
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # <- Prints to console
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # <- for smtp
+DEFAULT_FROM_EMAIL = 'colin@colincron.com'
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True

@@ -24,13 +24,13 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Account Settings</a>
-                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Change Password</a>
                         <a class="dropdown-item" href="{% url 'logout' %}">Logout</a>
                     </div>
                   </li>
                 {% else %}
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'signup'%}" tabindex="-1" aria-disabled="true">Sign Up</a>
+                  <a class="nav-link text-warning font-weight-bold" href="{% url 'signup'%}" tabindex="-1" aria-disabled="true">Sign Up</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'login'%}" tabindex="-1" aria-disabled="true">Log In</a>
