@@ -3,3 +3,6 @@ accounts/__pycache__/
 config/__pycache__/
 news/
 .vscode/
+.env
+news/
+db.sqlite3
